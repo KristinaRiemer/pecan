@@ -1,11 +1,11 @@
-Package: PEcAn.ModelName
+Package: PEcAn.SSEM
 Type: Package
-Title: PEcAn package for integration of the ModelName model
+Title: PEcAn package for integration of the SSEM model
 Version: 1.7.0
 Date: 2018-12-03
 Authors@R: c(person("Jane", "Doe"),
              person("John", "Doe"))
-Author: John Doe, Jane Doe
+Author: David LeBauer, Jane Doe
 Maintainer: John Doe <jdoe@illinois.edu>
 Description: This module provides functions to link the (ModelName) to PEcAn.
 Imports:
@@ -13,7 +13,7 @@ Imports:
     PEcAn.utils (>= 1.4.8)
 Suggests:
     testthat (>= 1.0.2)
-SystemRequirements: ModelName
+SystemRequirements: SSEM
 OS_type: unix
 License: FreeBSD + file LICENSE
 Copyright: Authors
