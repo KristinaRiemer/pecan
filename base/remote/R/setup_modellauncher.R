@@ -15,7 +15,7 @@ setup_modellauncher <- function(run, rundir, host_rundir, mpirun, binary) {
   }
   jobfile <- file(file.path(run_id_dir, "joblist.txt"), "w")
 
-  writeLines(c("#!/bin/bash", paste(mpirun, binary, file.path(host_rundir, run_string, "joblist.txt"))),
+  writeLines(c("#!/bin/bash", "module load openmpi", paste(mpirun, binary, file.path(host_rundir, run_string, "joblist.txt"))),
              con = launcherfile)
   # making sure we can run the file.
   Sys.chmod(launcherfile, "755") # or 744 for letting just the owner
